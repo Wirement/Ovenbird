@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ovenbird — Support</title>
+<meta name="description" content="Support, FAQ, and contact for Ovenbird — the offline hiking assistant.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Ovenbird</span>
+    </div>
+    <nav class="topnav" aria-label="Page sections">
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Support Center</p>
+      <h1>Ovenbird</h1>
+      <p class="tagline">Your offline hiking assistant — trail maps, live GPS stats, and an on-device AI guide that works with zero signal.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#faq">Browse FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2>What Ovenbird does</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Offline vector maps</h3>
+          <p>Download a region pack once, then get a full trail map — shelters, water sources, fire towers, and more — with zero connectivity required.</p>
+        </div>
+        <div class="card">
+          <h3>Live trail stats</h3>
+          <p>Distance, elevation gain/loss, pace, and grade, tracked from your phone's own GPS and sensors while you hike.</p>
+        </div>
+        <div class="card">
+          <h3>On-device AI chat</h3>
+          <p>Ask Ovenbird v1, Ovenbird's on-device assistant, about what's around you — every answer is grounded in your downloaded pack data, and nothing you type ever leaves your phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="wrap">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item" open>
+          <summary>Does Ovenbird work without cell service?</summary>
+          <p>Yes — once a region pack and the AI model are downloaded, the map, GPS stats, and chat all work fully offline.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why does the chat need a downloaded model?</summary>
+          <p>Ovenbird v1 runs entirely on your device so it works with zero connectivity; that's why it needs a one-time download first.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I use my own reference files in chat?</summary>
+          <p>Yes — attach a file from a Resources folder using the + button in the chat input, and the AI will use it to ground its answers.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does the app track my location remotely?</summary>
+          <p>No — GPS position is only ever used on-device to show your position and ground chat answers. It is never uploaded anywhere.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do I need to create an account?</summary>
+          <p>No. We believe in immediate utility without friction — open the app, download your regional pack, and hit the trail.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why do I need to grant location permissions?</summary>
+          <p>Location permission (When In Use) is required strictly so the map view can render your position relative to the trail, elevation contours, and nearby landmarks.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where does the trail and shelter data come from?</summary>
+          <p>Map data and trail geometries are sourced from OpenStreetMap contributors (ODbL), processed into optimized regional vector packs for fast offline rendering.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How do I download the AI model or a region pack again after deleting it?</summary>
+          <p>Open the side panel and go to Models (for Ovenbird v1) or Packs (for a region). The AI model can be re-downloaded anytime at no cost. A region pack, though, is a one-time download on the free tier — if you delete it, you'll need Ovenbird Pro to download another. Pro users can re-download any previously-installed pack anytime.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How do I cancel or manage my Ovenbird Pro subscription?</summary>
+          <p>In the app, go to Settings → Account &amp; Subscription → Manage/Cancel Subscription, which opens Apple's own subscription management screen. You can also manage it directly in Settings → [your Apple ID] → Subscriptions on your device.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>I found a bug, or the app crashed — what should I include in my report?</summary>
+          <p>Use the form below and include your device model, iOS version, and the steps that led to the issue — that's usually enough for us to reproduce it quickly. A screenshot helps too, if you can attach one when you reply to our confirmation email.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap wrap-narrow">
+      <h2>Get in touch</h2>
+      <p class="section-lede">Bug report, feature request, or general feedback — this goes straight to our inbox.</p>
+
+      <form id="support-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name">
+        </div>
+
+        <div class="field">
+          <label for="email">Your email <span class="req">(so we can reply)</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="Bug report">Bug report</option>
+            <option value="Feature request">Feature request</option>
+            <option value="Question">Question</option>
+            <option value="Subscription / billing">Subscription / billing</option>
+            <option value="Other feedback">Other feedback</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="What's going on?" required></textarea>
+        </div>
+
+        <!-- Honeypot: real visitors never see or fill this in; kept off-screen
+             rather than display:none, since some spam bots specifically skip
+             display:none fields. Any submission with this filled in is dropped. -->
+        <input type="text" name="botcheck" id="botcheck" class="honeypot" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Send feedback</button>
+        <p class="form-note" id="form-note">Sends directly to our support inbox — no email app required.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section alt" id="privacy">
+    <div class="wrap wrap-narrow">
+      <h2>Privacy Policy</h2>
+      <p class="fine-print">Effective July 31, 2026 · Last updated July 31, 2026</p>
+      <p>Your privacy is our highest priority. Ovenbird is built offline-first: your personal information and location stay on your device, under your control.</p>
+
+      <h3>Zero cloud data collection</h3>
+      <p>We do not collect, store, transmit, or sell any personal data. There's no account, no login, and no user database — everything you do in the app, including waypoints, downloaded map packs, and preferences, is stored locally on your device.</p>
+
+      <h3>Location data</h3>
+      <p>Location Services power your live position on offline maps and altitude/route tracking. Coordinates are processed strictly in real time, on your hardware — never uploaded, shared, or linked to an online identifier.</p>
+
+      <h3>On-device AI</h3>
+      <p>Ovenbird v1, Ovenbird's AI assistant, answers questions using your downloaded pack data entirely on-device. Nothing you type, and no location context, is ever used to train a model or shared with a third-party AI vendor.</p>
+
+      <h3>Network connections</h3>
+      <p>The app connects to the internet only to download region packs, the AI model, and to fetch live weather/place data from the public sources listed below. None of these requests carry personal identifiers or your location.</p>
+
+      <h3>No tracking</h3>
+      <p>We don't use advertising SDKs, cross-app tracking frameworks, or data brokers of any kind.</p>
+
+      <h3>This support page</h3>
+      <p>If you use the contact form above, your name, email, and message are sent to us and to our form processor, Web3Forms, solely so we can respond to you.</p>
+    </div>
+  </section>
+
+  <section class="section" id="terms">
+    <div class="wrap wrap-narrow">
+      <h2>Terms of Service</h2>
+      <p class="fine-print">Effective July 31, 2026</p>
+
+      <h3>Secondary navigation only</h3>
+      <p>Ovenbird is intended for secondary navigational assistance only. Backcountry environments carry inherent risk — always carry a physical topographic map, a magnetic compass, proper gear, and adequate supplies. Never rely solely on a phone for wilderness safety.</p>
+
+      <h3>Open data &amp; attribution</h3>
+      <p>Map features, trails, and regional geometry are derived from OpenStreetMap contributors, available under the Open Database License (ODbL).</p>
+
+      <h3>Limitation of liability</h3>
+      <p>To the maximum extent permitted by law, Ovenbird's developers are not liable for damages resulting from use of, or inability to use, this app — including getting lost, injury, property damage, or search-and-rescue expenses.</p>
+
+      <h3>Ovenbird Pro subscription</h3>
+      <p>Ovenbird Pro is an auto-renewing subscription billed through your Apple ID at the price shown at purchase. It renews automatically unless canceled at least 24 hours before the current period ends, and can be managed any time in Settings → [your Apple ID] → Subscriptions, or from within the app. No refund is issued for the unused portion of a period if you cancel partway through — canceling stops future renewals only. Free-tier limits apply automatically if a subscription lapses or is canceled: one saved trip at a time, 7 AI chat messages per day, and one region pack total (this does not reset, even if the pack is later deleted).</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="attribution">
+    <div class="wrap wrap-narrow">
+      <h2>Data &amp; attribution</h2>
+      <ul class="attribution-list">
+        <li>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, under the Open Database License (ODbL).</li>
+        <li>Weather and air quality data from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.</li>
+        <li>Place names and feature classification from the USGS Geographic Names Information System (GNIS).</li>
+        <li>Elevation data from the USGS 3DEP Elevation Point Query Service.</li>
+        <li>Article summaries from Wikipedia; structured place data from Wikidata.</li>
+      </ul>
+      <p class="llama-notice">Ovenbird v1, Ovenbird's on-device AI assistant, is <strong>Built with Llama</strong>. Ovenbird v1 runs Llama 3.2, licensed under the Llama 3.2 Community License, Copyright &copy; Meta Platforms, Inc. All Rights Reserved.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-brand">Ovenbird</p>
+      <p class="footer-wirement">A Wirement&trade; Project</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:mohamed.ben.206720@gmail.com">mohamed.ben.206720@gmail.com</a>
+      <span class="footer-sep">·</span>
+      <a href="#privacy">Privacy</a>
+      <span class="footer-sep">·</span>
+      <a href="#terms">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
